@@ -3,7 +3,7 @@ import pickle
 import numpy as np
 
 # Load Model
-with open("model/save_data_iris.pkcls", "rb") as f:
+with open("tugas_orange/save_data_iris.pkcls", "rb") as f:
     model = pickle.load(f)
 
 st.title("😭 Iris Flower Classifier 😭")
@@ -25,5 +25,6 @@ if st.button("Prediksi"):
     st.subheader("Hasil Prediksi")
 
     st.success(f"👌 Jenis Bunga: *{prediction}*")
+
 
 
